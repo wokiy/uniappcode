@@ -1,22 +1,9 @@
 <template>
 	<view class="content">
-		
-		
-		<image v-if="show"
-		 class="logo animated bounce fast" src="/static/logo.png"></image>
-		<button type="default" @tap="change">change</button>
-		
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
-		<view class="thline demo">
-		</view>
-		<view class="animated bounce">
-			hello uniapp 
-		</view>
-		
-		<view class="iconfont icon-wode">
-			
+		<view>
+			<image v-if="show"
+			 class="logo animated bounce fast" src="/static/logo.png"></image>
+			<button type="default" @tap="change">change</button>
 		</view>
 	</view>
 </template>

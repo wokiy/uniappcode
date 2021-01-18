@@ -17,4 +17,5 @@
 	@import './common/animate.css';
 	@import './common/common.css';
 	@import './common/icon.css';
+	@import './common/my-mian.css';
 </style>
