@@ -1,8 +1,22 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+		
+		
+		<image v-if="show"
+		 class="logo animated bounce fast" src="/static/logo.png"></image>
+		<button type="default" @tap="change">change</button>
+		
 		<view class="text-area">
 			<text class="title">{{title}}</text>
+		</view>
+		<view class="thline demo">
+		</view>
+		<view class="animated bounce">
+			hello uniapp 
+		</view>
+		
+		<view class="iconfont icon-wode">
+			
 		</view>
 	</view>
 </template>
@@ -11,42 +25,49 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				show: false
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			change() {
+				this.show = !this.show;
+			}
 		}
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
+		.logo {
+			height: 200rpx;
+			width: 200rpx;
+			margin-top: 200rpx;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 50rpx;
+		}
+		.demo {
+			height: 2upx;
+		}
+		.text-area {
 		display: flex;
 		justify-content: center;
+		.title {
+			font-size: 36rpx;
+			color: #8f8f94;
+			}
+		}
 	}
 
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	
+
+	
 </style>
