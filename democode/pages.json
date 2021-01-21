@@ -3,6 +3,44 @@
 		{
 			"path": "pages/index/index",
 			"style": {
+				"app-plus":{
+					"scrollIndicator":"none",//隐藏滚动条
+					"bounce":"none",//关闭页面回弹效果
+					"titleNView":{
+						//object  配置对象 导航栏
+						//搜做框配置
+						"searchInput":{
+							// object配置对象
+							"align":"left",
+							"backgroundColor":"#f7f7f7",
+							"borderRadius":"4px",
+							"placeholder":"狮头鹅",
+							"placeholderColor":"#cccccc",
+							"disabled":true
+						},
+						//配置按钮
+						"buttons":[
+							// array 数组配置项
+							//left 
+							{
+								"color":"#999999",
+								"colorPressed":"#bbbbbb",
+								"float":"left",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue67a"
+							},
+							//右边
+							{
+								"color":"#999999",
+								"colorPressed":"#bbbbbb",
+								"float":"right",
+								"fontSrc":"/static/font/iconfont.ttf",
+								"text":"\ue661"
+							}
+						]
+					}
+				},
 				"navigationBarTitleText": "uni-app"
 			}
 		}
