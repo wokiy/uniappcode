@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "uni-app",
-  "usingComponents": {}
+  "usingComponents": {
+    "swiper-image": "/components/index/swiper-image",
+    "index-class": "/components/index/index-class"
+  }
 }

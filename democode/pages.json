@@ -31,7 +31,7 @@
 								"text":"\ue67a"
 							},
 							//右边
-							{
+							{ 
 								"color":"#999999",
 								"colorPressed":"#bbbbbb",
 								"float":"right",

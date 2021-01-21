@@ -1,1 +1,1 @@
-<view class="content"><view><block wx:if="{{show}}"><image class="logo animated bounce fast" src="/static/logo.png"></image></block><button type="default" data-event-opts="{{[['tap',[['change',['$event']]]]]}}" bindtap="__e">change</button></view></view>
+<view class="content"><swiper-image vue-id="8dd740cc-1" resData="{{swiperImages}}" bind:__l="__l"></swiper-image><index-class vue-id="8dd740cc-2" indexclassData="{{indexclass}}" bind:__l="__l"></index-class></view>

@@ -135,27 +135,79 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var swiperImage = function swiperImage() {__webpack_require__.e(/*! require.ensure | components/index/swiper-image */ "components/index/swiper-image").then((function () {return resolve(__webpack_require__(/*! ../../components/index/swiper-image.vue */ 39));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var indexClass = function indexClass() {__webpack_require__.e(/*! require.ensure | components/index/index-class */ "components/index/index-class").then((function () {return resolve(__webpack_require__(/*! ../../components/index/index-class.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
       title: 'Hello',
-      show: false };
+      show: false,
+      swiperImages: [
+      { src: "../../static/images/demo/ddome4.jpg" },
+      { src: "../../static/images/demo/ddome4.jpg" },
+      { src: "../../static/images/demo/ddome4.jpg" },
+      { src: "../../static/images/demo/ddome4.jpg" }],
+
+      indexclass: [
+      {
+        src: "../../static/indexnav/1.png",
+        name: "新品分类" },
+
+      {
+        src: "../../static/indexnav/2.gif",
+        name: "小米众筹" },
+
+      {
+        src: "../../static/indexnav/3.gif",
+        name: "以旧换新" },
+
+      {
+        src: "../../static/indexnav/4.gif",
+        name: "1分拼团" },
+
+      {
+        src: "../../static/indexnav/5.gif",
+        name: "超低特卖" },
+
+      {
+        src: "../../static/indexnav/6.gif",
+        name: "小米秒杀" },
+
+      {
+        src: "../../static/indexnav/7.gif",
+        name: "真心特卖" },
+
+      {
+        src: "../../static/indexnav/8.gif",
+        name: "电视热卖" },
+
+      {
+        src: "../../static/indexnav/9.gif",
+        name: "家电热卖" },
+
+      {
+        src: "../../static/indexnav/10.gif",
+        name: "米粉卡" }] };
+
+
 
   },
-  onLoad: function onLoad() {
+  components: {
+    swiperImage: swiperImage,
+    indexClass: indexClass },
 
-  },
+  onLoad: function onLoad() {},
   methods: {
     change: function change() {
       this.show = !this.show;
