@@ -12,9 +12,11 @@
 				</view>
 			</template> -->
 			<block v-slot:title>
-				<text class="font-md font-weight">
-					{{cardMessage.title}}
-				</text>
+				<view v-if="showHeader" class="p-2 border-bottom main-borer-color">   
+					<text class="font-md font-weight" >
+						{{cardMessage.title}}
+					</text>
+				</view>
 			</block>
 			<block v-slot:bottom>
 				<view class="img-box">
@@ -29,7 +31,11 @@
 	import card from "../common/card.vue"
 	export default {
 		props:{
-				cardMessage: Object
+				cardMessage: Object,
+				showHeader:{
+					type:Boolean,
+					default: true
+				}
 		},
 		data() {
 			return {

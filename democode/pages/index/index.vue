@@ -9,7 +9,7 @@
 		<!-- 三张图片广告组件 -->
 		<three-logo :threeAdvs="threeAdv"></three-logo>
 		<!-- card每日精选组件 -->
-		<selecr-it :cardMessage="cardmessage"></selecr-it>
+		<selecr-it :cardMessage="cardmessage" :showHeader="cardmessage.showHeader"></selecr-it>
 	</view>
 </template>
 
@@ -24,7 +24,8 @@ export default {
 		return { 
 			cardmessage:{
 				title:"每日精选",
-				bodyContent:"../../static/images/demo/demo4.jpg"
+				bodyContent:"../../static/images/demo/demo4.jpg",
+				showHeader:true
 			},
 			threeAdv: {
 				bigImage:{

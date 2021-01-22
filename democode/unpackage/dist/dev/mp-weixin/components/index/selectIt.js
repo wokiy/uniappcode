@@ -143,9 +143,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
 {
   props: {
-    cardMessage: Object },
+    cardMessage: Object,
+    showHeader: {
+      type: Boolean,
+      default: true } },
+
 
   data: function data() {
     return {};

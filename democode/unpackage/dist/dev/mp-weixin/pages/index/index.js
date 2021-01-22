@@ -161,7 +161,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     return {
       cardmessage: {
         title: "每日精选",
-        bodyContent: "../../static/images/demo/demo4.jpg" },
+        bodyContent: "../../static/images/demo/demo4.jpg",
+        showHeader: true },
 
       threeAdv: {
         bigImage: {
