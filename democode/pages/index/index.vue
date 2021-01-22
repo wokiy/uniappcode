@@ -4,13 +4,14 @@
 		<swiper-image :resData="swiperImages"></swiper-image>
 		<!-- 首页分类组件 -->
 		<index-class :indexclassData="indexclass"></index-class>
-		
+		<divider></divider>
 	</view>
 </template>
 
 <script>
 import swiperImage  from "../../components/index/swiper-image.vue";
-import indexClass from "../../components/index/index-class.vue"
+import indexClass from "../../components/index/index-class.vue";
+import divider from "../../components/common/divider.vue";
 export default {
 	data() {
 		return {
@@ -68,7 +69,8 @@ export default {
 	},
 	components:{
 		swiperImage,
-		indexClass
+		indexClass,
+		divider
 	},
 	onLoad() {},
 	methods: {

@@ -2,6 +2,7 @@
   "navigationBarTitleText": "uni-app",
   "usingComponents": {
     "swiper-image": "/components/index/swiper-image",
-    "index-class": "/components/index/index-class"
+    "index-class": "/components/index/index-class",
+    "divider": "/components/common/divider"
   }
 }

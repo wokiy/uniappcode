@@ -135,7 +135,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var swiperImage = function swiperImage() {__webpack_require__.e(/*! require.ensure | components/index/swiper-image */ "components/index/swiper-image").then((function () {return resolve(__webpack_require__(/*! ../../components/index/swiper-image.vue */ 39));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var indexClass = function indexClass() {__webpack_require__.e(/*! require.ensure | components/index/index-class */ "components/index/index-class").then((function () {return resolve(__webpack_require__(/*! ../../components/index/index-class.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var swiperImage = function swiperImage() {__webpack_require__.e(/*! require.ensure | components/index/swiper-image */ "components/index/swiper-image").then((function () {return resolve(__webpack_require__(/*! ../../components/index/swiper-image.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var indexClass = function indexClass() {__webpack_require__.e(/*! require.ensure | components/index/index-class */ "components/index/index-class").then((function () {return resolve(__webpack_require__(/*! ../../components/index/index-class.vue */ 49));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var divider = function divider() {__webpack_require__.e(/*! require.ensure | components/common/divider */ "components/common/divider").then((function () {return resolve(__webpack_require__(/*! ../../components/common/divider.vue */ 37));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
 
 
 
@@ -205,7 +206,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   },
   components: {
     swiperImage: swiperImage,
-    indexClass: indexClass },
+    indexClass: indexClass,
+    divider: divider },
 
   onLoad: function onLoad() {},
   methods: {
