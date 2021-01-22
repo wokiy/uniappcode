@@ -5,6 +5,7 @@
 		<!-- 首页分类组件 -->
 		<index-class :indexclassData="indexclass"></index-class>
 		<divider></divider>
+		<three-logo :threeAdvs="threeAdv"></three-logo>
 	</view>
 </template>
 
@@ -12,9 +13,21 @@
 import swiperImage  from "../../components/index/swiper-image.vue";
 import indexClass from "../../components/index/index-class.vue";
 import divider from "../../components/common/divider.vue";
+import threeLogo from "../../components/index/three-logo.vue"
 export default {
 	data() {
 		return {
+			threeAdv: {
+				bigImage:{
+					src:"../../static/images/demo/demo1.jpg"
+				},
+				leftTopImage:{
+					src:"../../static/images/demo/demo2.jpg"
+				},
+				leftBottonImage:{
+					src:"../../static/images/demo/demo2.jpg"
+				}
+			},
 			title: 'Hello',
 			show: false,
 			swiperImages:[
@@ -65,12 +78,15 @@ export default {
 					name: "米粉卡"
 				},
 			]
+			
 			}
+			
 	},
 	components:{
 		swiperImage,
 		indexClass,
-		divider
+		divider,
+		threeLogo
 	},
 	onLoad() {},
 	methods: {
