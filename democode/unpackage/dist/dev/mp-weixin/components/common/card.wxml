@@ -1,1 +1,1 @@
-<view class="card"><view class="font-md font-weight p-2 border-bottom main-borer-color"><slot></slot></view><view><slot name="bottom"></slot></view></view>
+<view class="card"><view class="p-2 border-bottom main-borer-color"><slot name="title"></slot></view><view><slot name="bottom"></slot></view></view>

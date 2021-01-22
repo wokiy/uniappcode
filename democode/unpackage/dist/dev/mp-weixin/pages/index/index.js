@@ -159,6 +159,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   data: function data() {
     return {
+      cardmessage: {
+        title: "每日精选",
+        bodyContent: "../../static/images/demo/demo4.jpg" },
+
       threeAdv: {
         bigImage: {
           src: "../../static/images/demo/demo1.jpg" },

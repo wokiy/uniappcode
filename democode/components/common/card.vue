@@ -2,8 +2,8 @@
 	<!-- 基础卡片组件封装 -->
 	<view class="card">
 		<!-- 顶部标题和右边插槽 -->
-		<view class="font-md font-weight p-2 border-bottom main-borer-color">    
-			<slot></slot>
+		<view class="p-2 border-bottom main-borer-color">   
+			<slot name="title"></slot> 
 		</view>
 		<!-- 底部内容区域 设置插槽让业务组件去填写插槽中的业务内容-->
 		<view>

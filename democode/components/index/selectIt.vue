@@ -1,17 +1,26 @@
 <template>
 	<view class="box-wrapper">
 		<card>
-			<template>
-				<template>
-					<view>每日精选</view>
-				</template>
+			<!-- <template v-slot:title>
+				<text class="font-md font-weight">
+					{{cardMessage.title}}
+				</text>
 			</template>
 			<template v-slot:bottom>
 				<view class="img-box">
-					<image style="height: 299upx;" src="../../static/images/demo/demo4.jpg" 
-					mode="heightFix"></image>
+					<image style="height: 299upx;" :src="cardMessage.bodyContent" mode="heightFix"></image>
 				</view>
-			</template>
+			</template> -->
+			<block v-slot:title>
+				<text class="font-md font-weight">
+					{{cardMessage.title}}
+				</text>
+			</block>
+			<block v-slot:bottom>
+				<view class="img-box">
+					<image style="height: 299upx;" :src="cardMessage.bodyContent" mode="heightFix"></image>
+				</view>
+			</block>
 		</card>
 	</view>
 </template>
@@ -19,7 +28,9 @@
 <script>
 	import card from "../common/card.vue"
 	export default {
-		
+		props:{
+				cardMessage: Object
+		},
 		data() {
 			return {
 				

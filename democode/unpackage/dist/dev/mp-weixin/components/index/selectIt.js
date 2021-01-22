@@ -134,7 +134,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
 {
+  props: {
+    cardMessage: Object },
 
   data: function data() {
     return {};

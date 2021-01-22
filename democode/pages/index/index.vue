@@ -9,7 +9,7 @@
 		<!-- 三张图片广告组件 -->
 		<three-logo :threeAdvs="threeAdv"></three-logo>
 		<!-- card每日精选组件 -->
-		<selecr-it></selecr-it>
+		<selecr-it :cardMessage="cardmessage"></selecr-it>
 	</view>
 </template>
 
@@ -21,7 +21,11 @@ import threeLogo from "../../components/index/three-logo.vue"
 import selecrIt from "../../components/index/selectIt.vue"
 export default {
 	data() {
-		return {
+		return { 
+			cardmessage:{
+				title:"每日精选",
+				bodyContent:"../../static/images/demo/demo4.jpg"
+			},
 			threeAdv: {
 				bigImage:{
 					src:"../../static/images/demo/demo1.jpg"
