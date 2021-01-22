@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "selectIt-card-default": "/components/index/selectIt-card-default",
+    "card": "/components/common/card"
+  }
+}

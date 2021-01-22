@@ -4,8 +4,12 @@
 		<swiper-image :resData="swiperImages"></swiper-image>
 		<!-- 首页分类组件 -->
 		<index-class :indexclassData="indexclass"></index-class>
+		<!-- 分割线组件 -->
 		<divider></divider>
+		<!-- 三张图片广告组件 -->
 		<three-logo :threeAdvs="threeAdv"></three-logo>
+		<!-- card每日精选组件 -->
+		<selecr-it></selecr-it>
 	</view>
 </template>
 
@@ -14,6 +18,7 @@ import swiperImage  from "../../components/index/swiper-image.vue";
 import indexClass from "../../components/index/index-class.vue";
 import divider from "../../components/common/divider.vue";
 import threeLogo from "../../components/index/three-logo.vue"
+import selecrIt from "../../components/index/selectIt.vue"
 export default {
 	data() {
 		return {
@@ -86,7 +91,8 @@ export default {
 		swiperImage,
 		indexClass,
 		divider,
-		threeLogo
+		threeLogo,
+		selecrIt
 	},
 	onLoad() {},
 	methods: {

@@ -1,0 +1,1 @@
+<view class="box-wrapper"><card vue-id="35ac2d07-1" bind:__l="__l" vue-slots="{{['default','bottom']}}"><view slot="bottom"><view class="img-box"><image style="height:299rpx;" src="../../static/images/demo/demo4.jpg" mode="heightFix"></image></view></view><view>每日精选</view></card></view>

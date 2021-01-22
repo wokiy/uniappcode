@@ -4,6 +4,7 @@
     "swiper-image": "/components/index/swiper-image",
     "index-class": "/components/index/index-class",
     "divider": "/components/common/divider",
-    "three-logo": "/components/index/three-logo"
+    "three-logo": "/components/index/three-logo",
+    "selecr-it": "/components/index/selectIt"
   }
 }

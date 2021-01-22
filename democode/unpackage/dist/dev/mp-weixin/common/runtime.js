@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/common/divider":1};
+/******/ 		var cssChunks = {"components/common/divider":1,"components/index/selectIt":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/common/divider":"components/common/divider","components/index/index-class":"components/index/index-class","components/index/swiper-image":"components/index/swiper-image","components/index/three-logo":"components/index/three-logo"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/common/divider":"components/common/divider","components/index/index-class":"components/index/index-class","components/index/selectIt":"components/index/selectIt","components/index/swiper-image":"components/index/swiper-image","components/index/three-logo":"components/index/three-logo","components/common/card":"components/common/card"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
